@@ -1,0 +1,7 @@
+export function Container({ children }) {
+  return (
+    <div style={{ maxWidth: 1100, margin: "0 auto", padding: "0 20px" }}>
+      {children}
+    </div>
+  );
+}

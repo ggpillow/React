@@ -1,0 +1,84 @@
+.header {
+    padding: 18px 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    gap: 16px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    min-width: 0;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.logo {
+    height: 64px;
+    width: auto;
+    display: block;
+}
+
+.brandText {
+    font-weight: 900;
+    letter-spacing: 0.3px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text);
+    opacity: 0.85;
+    font-weight: 600;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.link:focus-visible,
+.brand:focus-visible {
+    outline: 2px solid rgba(109, 94, 252, 0.9);
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.skipLink {
+    position: absolute;
+    left: -9999px;
+    top: 8px;
+    padding: 10 px 12 px;
+    border-radius: 10px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+.skipLink:focus {
+    left: 12px;
+}
+
+@media (max-width: 720px) {
+    .nav {
+        display: none;
+    }
+}
