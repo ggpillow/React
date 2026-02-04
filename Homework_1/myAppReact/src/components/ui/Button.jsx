@@ -1,29 +1,18 @@
-export function Button({ href, children, variant = "primary", ariaLabel }) {
-  const style = {
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: "10px 14px",
-    borderRadius: 12,
-    fontWeight: 700,
-    textDecoration: "none",
-    border: "1px solid #2a2f3a",
-    background: variant === "secondary" ? "#1b2030" : "#6d5efc",
-    color: "white",
-    cursor: "pointer",
-  };
+import styles from "./Button.module.css";
 
-  // Если передали href — это ссылка, иначе кнопка
+export function Button({ href, children, variant = "primary", ariaLabel, onClick }) {
+  const className = `${styles.btn} ${styles[variant]}`;
+
   if (href) {
     return (
-      <a href={href} style={style} aria-label={ariaLabel}>
+      <a href={href} className={className} aria-label={ariaLabel}>
         {children}
       </a>
     );
   }
 
   return (
-    <button type="button" style={style} aria-label={ariaLabel}>
+    <button type="button" className={className} aria-label={ariaLabel} onClick={onClick}>
       {children}
     </button>
   );

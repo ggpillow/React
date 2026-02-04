@@ -1,0 +1,52 @@
+.banner {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 16px;
+  border-radius: 14px;
+
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.35;
+  opacity: 0.9;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.btnPrimary,
+.btnGhost {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btnPrimary {
+  background: var(--accent, #6d5efc);
+  color: #fff;
+}
+
+.btnGhost {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
