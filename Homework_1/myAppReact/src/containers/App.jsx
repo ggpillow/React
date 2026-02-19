@@ -5,6 +5,9 @@ import { CookieBanner } from "../components/CookieBanner/CookieBanner"
 import { Features } from "../components/Features/Features"
 import { siteData } from "../data/siteData"
 import { Container } from "../components/layout/Container"
+import { ExpeditionJournal } from "../components/ExpeditionJournal/ExpeditionJournal";
+
+import { HomeworkMovies } from "../components/HomeworkMovies/HomeworkMovies";
 
 const COOKIE_KEY = "cookiesAccepted";
 
@@ -35,8 +38,11 @@ export default function App() {
 
       <main id="main">
         <Hero {...siteData.hero} />
+
         <Container>
           <Features items={siteData.features} />
+          <ExpeditionJournal />
+          <HomeworkMovies />
         </Container>
       </main>
 

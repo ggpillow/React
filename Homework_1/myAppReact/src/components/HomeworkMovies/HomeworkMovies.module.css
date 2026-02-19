@@ -1,0 +1,106 @@
+.section {
+  margin-top: 40px;
+}
+
+.header {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.title {
+  margin: 0;
+  font-size: 22px;
+}
+
+.subtitle {
+  margin: 0;
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.input,
+.select {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.select {
+  min-width: 170px;
+}
+
+.state {
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.error {
+  padding: 14px;
+  border-radius: 12px;
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.08);
+  border: 1px solid rgba(255, 107, 107, 0.25);
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.info {
+  padding: 12px;
+}
+
+.name {
+  margin: 0 0 6px;
+  font-size: 14px;
+}
+
+.meta {
+  margin: 0 0 6px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.genres {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.65;
+}
